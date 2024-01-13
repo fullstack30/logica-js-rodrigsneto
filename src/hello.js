@@ -1,6 +1,6 @@
 frase = "";
 
-function hello(frase = "World") {
+function hello() {
 
     if (typeof frase != "string") {
         frase = "World";
