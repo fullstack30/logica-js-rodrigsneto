@@ -1,10 +1,10 @@
 function soma(a, b) {
-    if(n2 === "" || n2 === undefined || n2 === null || isNaN(n1) || isNaN(n2)) {
+    if(b === "" || b === undefined || b === null || isNaN(a) || isNaN(b)) {
         return "Parâmetros inválidos!";
     }
 
-    if (typeof n1 === "string" || typeof n2 === 'string') {
-        return Number(n1) + Number(n2);
+    if (typeof a === "string" || typeof b === 'string') {
+        return Number(a) + Number(b);
     }
 
 }
