@@ -1,5 +1,5 @@
 function inverte_lista(array) {
-    if (novo_array instanceof Array === false || array.length === 0) {
+    if (array instanceof Array === false || array.length === 0) {
         return "Argumento inválido. Função espera receber um array como argumento.";
     }
 
