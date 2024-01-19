@@ -1,6 +1,6 @@
 function soma_impar(x) {
 
-    if (isNaN(x) === true || Math.sign(x) === -1) {
+    if (isNaN(x) === true || Math.sign(x) === -1 || Number.isInteger(x) == false) {
         return "Função aceita apenas números inteiros positivos.";
     } 
     
@@ -19,5 +19,3 @@ function soma_impar(x) {
     return soma_final;
 
 }
-
-console.log(soma_impar(-10));
