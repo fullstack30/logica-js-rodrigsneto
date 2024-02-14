@@ -1,15 +1,11 @@
 function fatorial(params) {
-    if (isNaN(params) == false) {
-        params = parseInt(params);
+    if ((params < 0) || ((Number.isInteger(params) == false) && (isNaN(params) == false))) {
+        return "Função deve receber um argumento do tipo inteiro positivo.";
     }
-    if (Number.isInteger(params) && params > 0) {
-
-        let fator = 1;
-        for (i = 1; i < params + 1; i++ ) {
-            fator = fator * i;
-        }
-        return fator;
+    params = parseInt(params);
+    let fator = 1;
+    for (i = 1; i < params + 1; i++ ) {
+        fator = fator * i;
     }
-
-    return "Função deve receber um argumento do tipo inteiro positivo.";
+    return fator;
 }
