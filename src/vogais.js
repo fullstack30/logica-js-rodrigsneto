@@ -7,3 +7,5 @@ function vogais(params) {
     }
 
     return "Função aceita apenas string como argumento.";
+
+}
