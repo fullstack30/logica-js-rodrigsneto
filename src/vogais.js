@@ -1,7 +1,7 @@
 function vogais(params) {
     if(typeof params == 'string') {
         var string = params.split('');
-        var vogais = string.filter(caracter => /[aeiouçAEIOUÇ]/.test(caracter));
+        var vogais = string.filter(caracter => /[aàáâãeéêèiíìoòóôuúùûçAÀÁÂÃEÉÈÊIÍÌOÓÒÔÕUÇ]/.test(caracter));
 
         return vogais.length;
     }
